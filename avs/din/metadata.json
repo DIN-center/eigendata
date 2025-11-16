@@ -3,5 +3,423 @@
     "website": "https://din.build/",
     "description": "DIN is a decentralized B2B service discovery marketplace, enhancing the performance, reliability, and cost-effectiveness of dapp development through a network of 50+ Web3 Infrastructure providers. DIN is capable of serving 14+ popular blockchain network APIs and RPCs with high throughput and performance with no single point of failure. DIN is currently in a federated phase, progressively decentralizing traffic across Infura and MetaMask.",
     "logo": "https://raw.githubusercontent.com/DIN-center/eigendata/master/avs/din/logo.png",
-    "twitter": "https://x.com/dinbuild"
+    "twitter": "https://x.com/dinbuild",
+    "operatorSets": [
+        {
+            "name": "routers",
+            "id": "0",
+            "description": "Operator set for routers",
+            "software": [
+                {
+                    "name": "DIN routing services",
+                    "description": "Routing and request distribution services for DIN network (under development)",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": []
+        },
+        {
+            "name": "watchers",
+            "id": "1",
+            "description": "Operator set for watchers (responsible for approving qualifications and initiating slashing)",
+            "software": [
+                {
+                    "name": "DIN monitoring and qualification services",
+                    "description": "Monitoring, qualification approval, and slashing initiation services for DIN network (under development)",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": []
+        },
+        {
+            "name": "arbitrum-mainnet-archive",
+            "id": "2",
+            "description": "Operators in this set provide archive node access for Arbitrum mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Arbitrum Archive Node",
+                    "description": "Archive node for Arbitrum mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "blast-mainnet",
+            "id": "3",
+            "description": "Operators in this set provide node access for Blast mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Blast Node",
+                    "description": "Full node for Blast mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "blast-testnet",
+            "id": "4",
+            "description": "Operators in this set provide node access for Blast testnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Blast Node",
+                    "description": "Full node for Blast testnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "bsc-mainnet",
+            "id": "5",
+            "description": "Operators in this set provide node access for BSC mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "BSC Node",
+                    "description": "Full node for BSC mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "bsc-testnet",
+            "id": "6",
+            "description": "Operators in this set provide node access for BSC testnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "BSC Node",
+                    "description": "Full node for BSC testnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "hemi-mainnet",
+            "id": "7",
+            "description": "Operators in this set provide node access for Hemi mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Hemi Node",
+                    "description": "Full node for Hemi mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "hemi-testnet",
+            "id": "8",
+            "description": "Operators in this set provide node access for Hemi testnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Hemi Node",
+                    "description": "Full node for Hemi testnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "hoodi",
+            "id": "9",
+            "description": "Operators in this set provide node access for Hoodi, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Hoodi Node",
+                    "description": "Full node for Hoodi",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "mantle-mainnet",
+            "id": "10",
+            "description": "Operators in this set provide node access for Mantle mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Mantle Node",
+                    "description": "Full node for Mantle mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "mantle-sepolia",
+            "id": "11",
+            "description": "Operators in this set provide node access for Mantle Sepolia, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Mantle Node",
+                    "description": "Full node for Mantle Sepolia",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "monad-mainnet",
+            "id": "12",
+            "description": "Operators in this set provide node access for Monad mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Monad Node",
+                    "description": "Full node for Monad mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "monad-testnet",
+            "id": "13",
+            "description": "Operators in this set provide node access for Monad testnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Monad Node",
+                    "description": "Full node for Monad testnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "opbnb-mainnet",
+            "id": "14",
+            "description": "Operators in this set provide node access for opBNB mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "opBNB Node",
+                    "description": "Full node for opBNB mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "opbnb-testnet",
+            "id": "15",
+            "description": "Operators in this set provide node access for opBNB testnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "opBNB Node",
+                    "description": "Full node for opBNB testnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "scroll-mainnet",
+            "id": "16",
+            "description": "Operators in this set provide node access for Scroll mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Scroll Node",
+                    "description": "Full node for Scroll mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "scroll-sepolia",
+            "id": "17",
+            "description": "Operators in this set provide node access for Scroll Sepolia, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Scroll Node",
+                    "description": "Full node for Scroll Sepolia",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "sei-mainnet",
+            "id": "18",
+            "description": "Operators in this set provide node access for Sei mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Sei Node",
+                    "description": "Full node for Sei mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "sei-mainnet-archive",
+            "id": "19",
+            "description": "Operators in this set provide archive node access for Sei mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Sei Archive Node",
+                    "description": "Archive node for Sei mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "sei-testnet",
+            "id": "20",
+            "description": "Operators in this set provide node access for Sei testnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Sei Node",
+                    "description": "Full node for Sei testnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "solana-mainnet",
+            "id": "21",
+            "description": "Operators in this set provide node access for Solana mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Solana Node",
+                    "description": "Full node for Solana mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "swellchain-mainnet",
+            "id": "22",
+            "description": "Operators in this set provide node access for Swellchain mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Swellchain Node",
+                    "description": "Full node for Swellchain mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "swellchain-testnet",
+            "id": "23",
+            "description": "Operators in this set provide node access for Swellchain testnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Swellchain Node",
+                    "description": "Full node for Swellchain testnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "unichain-mainnet",
+            "id": "24",
+            "description": "Operators in this set provide node access for Unichain mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Unichain Node",
+                    "description": "Full node for Unichain mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "unichain-sepolia",
+            "id": "25",
+            "description": "Operators in this set provide node access for Unichain Sepolia, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "Unichain Node",
+                    "description": "Full node for Unichain Sepolia",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "zksync-mainnet",
+            "id": "26",
+            "description": "Operators in this set provide node access for zkSync mainnet, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "zkSync Node",
+                    "description": "Full node for zkSync mainnet",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        },
+        {
+            "name": "zksync-sepolia",
+            "id": "27",
+            "description": "Operators in this set provide node access for zkSync Sepolia, enabling RPC queries and optionally historical state queries",
+            "software": [
+                {
+                    "name": "zkSync Node",
+                    "description": "Full node for zkSync Sepolia",
+                    "url": ""
+                }
+            ],
+            "slashingConditions": [
+                "Serving RPC data from incorrect network/chain"
+            ]
+        }
+    ]
 }
