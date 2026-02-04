@@ -34,11 +34,11 @@
         {
             "name": "service providers",
             "id": "2",
-            "description": "Service Providers powering DIN's Marketplace offering",
+            "description": "Service Providers for DIN's API and Marketplace offerings",
             "software": [
                 {
                     "name": "DIN Service Providers",
-                    "description": "A battle hardened collective of Service Providers cooperating to bring you the goods",
+                    "description": "Service Providers offering APIs and web-based services on the Decentralized Infrastructure Network",
                     "url": ""
                 }
             ],
