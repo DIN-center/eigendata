@@ -32,19 +32,17 @@
             "slashingConditions": []
         },
         {
-            "name": "arbitrum-mainnet-archive",
+            "name": "service providers",
             "id": "2",
-            "description": "Operators in this set provide archive node access for Arbitrum mainnet, enabling RPC queries and optionally historical state queries",
+            "description": "Service Providers for DIN's API and Marketplace offerings",
             "software": [
                 {
-                    "name": "Arbitrum Archive Node",
-                    "description": "Archive node for Arbitrum mainnet",
+                    "name": "DIN Service Providers",
+                    "description": "Service Providers offering APIs and web-based services on the Decentralized Infrastructure Network",
                     "url": ""
                 }
             ],
-            "slashingConditions": [
-                "Serving RPC data from incorrect network/chain"
-            ]
+            "slashingConditions": []
         },
         {
             "name": "blast-mainnet",
